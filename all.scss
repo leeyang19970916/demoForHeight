@@ -15,6 +15,18 @@ header{
     color: aliceblue;
 }
 main{
-    background-color: rgb(150, 82, 82);
+    // background-color: rgb(150, 82, 82);
     height: calc( 100% - 45px);
+    display: flex;
+
+    nav{
+        height: 100%;
+        background-color: rgb(195, 195, 118);
+        width: 20%;
+    }
+    section{
+        height: 100%;
+        background-color: lightpink;
+        width: 80%;
+    }
 }
