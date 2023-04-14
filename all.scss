@@ -13,10 +13,13 @@ header{
     padding-left: 50px;
     font-size: larger;
     color: aliceblue;
+    position: sticky;
+    top: 0;
 }
 main{
     // background-color: rgb(150, 82, 82);
-    height: calc( 100% - 45px);
+    height: calc( 100% + 545px);
+    // height: 100%;
     display: flex;
 
     nav{

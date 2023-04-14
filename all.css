@@ -14,10 +14,12 @@ header {
   padding-left: 50px;
   font-size: larger;
   color: aliceblue;
+  position: sticky;
+  top: 0;
 }
 
 main {
-  height: calc(100% - 45px);
+  height: calc(100% + 545px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

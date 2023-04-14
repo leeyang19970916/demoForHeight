@@ -9,37 +9,21 @@
   </head>
   <body>
     <div id="root">
-      <header>header</header>
+      <header>innerHeight 抓高度 套件demo</header>
       <main>
         <nav>navbar</nav>
-        <section>主要內容</section>
+        <section>
+          <div class="item header">
+            213
+          </div>
+        </section>
       </main>
     </div>
+
   </body>
 </html>
 <script>
-  // 取得 #root 元素
-  const root = document.getElementById("root");
-
-  // 取得 #root 元素的 innerHeight
-  const rootHeight = window.innerHeight;
-
-  // 設定 #root 元素的高度為 innerHeight
-  root.style.height = `${rootHeight}px`;
-
-  // resize 監聽器
-  window.addEventListener("resize", () => {
-    // 重新取得 #root 元素的 innerHeight
-    const newRootHeight = window.innerHeight
-    // 重新設定 #root 元素的高度
-    root.style.height = `${newRootHeight}px`;
-  });
-
-  // 翻轉監聽器
-  window.addEventListener("orientationchange", () => {
-    // 重新取得 #root 元素的 innerHeight
-    const newRootHeight = window.innerHeight
-    // 重新設定 #root 元素的高度
-    root.style.height = `${newRootHeight}px`;
-  });
+  let root=document.querySelector("#root")
+  root.style.height=`${window.innerHeight}px`
+  console.log(root,"roo",window.innerHeight)
 </script>
